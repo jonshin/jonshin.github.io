@@ -1,0 +1,231 @@
+.header{
+	width: 100%;
+	height: 55px;
+	background-color: rgba(0,0,0,.8);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+}
+.logo{
+	width: 170px;
+	height: 55px;
+	top: 0px;
+	left: 0px;
+	float: left;
+}
+.logo img{
+	height: 15px;
+	padding-top: 18px;
+	padding-left: 18px;
+}
+.subhead{
+	width: 100px;
+	height: 55px;
+	top: 0px;
+	right: 0px;
+	float: right;
+}
+.subhead p{
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	text-align: right;
+	padding-right: 18px;
+	font-size: 15px;
+	margin-top: 18px;
+	letter-spacing: .3px;
+}
+body{
+	background-color: black;
+}
+.canvas{
+	width: 100%;
+}
+.rows{
+	height: 1024px;
+}
+.columns{
+	width: 768px;
+	margin: auto;
+}
+.black{
+	background-color: black;
+}
+.title{
+	font-family: 'Roboto', sans-serif;
+	font-size: 100px;
+	margin-top: 200px;
+	letter-spacing: .3px;
+	text-align: center;
+	color: white;
+	border-bottom: 0px;
+}
+.subtitle{
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+	margin-top: -80px;
+	letter-spacing: .3px;
+	text-align: center;
+	color: white;
+	border-bottom: 0px;
+}
+a{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	letter-spacing: 2px;
+	text-align: center;
+	color: red;
+	text-decoration: none;
+	margin: 20px 20px;
+}
+a:hover{
+	padding-bottom: 20px;
+	border-bottom: 2px solid red;
+}
+.choices{
+	margin-top: -70px;
+	text-align: center;
+	padding-bottom: 100px;
+}
+.videobackground{
+	overflow: hidden;
+	width: 100%;
+}
+.videobackground h2{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	margin-top: 480px;
+}
+.gradient{
+    background: -webkit-linear-gradient(black, gray); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, gray); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, gray); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, gray); /* Standard syntax */
+    position: relative;
+    height: 100%;
+}
+.white{
+	background-color: white;
+	width: 100%;
+}
+.videocard{
+	width: 400px;
+	height: 600px;
+	margin: auto;
+	background-color: white;
+	margin-top: 100px;
+}
+.videocard p{
+	font-size: 16px;
+	margin-top: 10px;
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+span{
+	opacity: 0.5;
+	line-height: 3;
+	font-size: 14;
+}
+.speed{
+	width: 100%;
+	margin-top: 100px;
+}
+.speed2{
+	color: white;
+	width: 100%;
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	margin-top: -100px;
+}
+.diagram{
+	width: 300px;
+	margin: auto;
+}
+.safety{
+	width: 100%;
+	margin-top: 100px;
+}
+.safety2{
+	color: white;
+	width: 100%;
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 10px;
+	margin-top: -100px;
+}
+video{
+	min-width: 100%; 
+	min-height: 100%; 
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+}
+.swiper-slide img{
+	height: 300px;
+	margin-top: 100px;
+}
+h2{
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 60px;
+	margin-top: 18px;
+	letter-spacing: .3px;
+	text-align: center;
+	height: 130px;
+}
+.swiper-slide p{
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	margin-top: 18px;
+	letter-spacing: .3px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.panel{
+	width: 600px;
+	margin: auto;
+}
+.panel img{
+	width: 600px;
+	margin-top: 200px;
+}
+.button{
+	width: 80px;
+	height: 80px;
+	margin-left: 86px;
+	margin-top: 30px;
+	border-radius: 100px;
+	float: left;
+}
+.purple{
+	background-color: purple;
+}
+.red{
+	background-color: red;
+}
+.green{
+	background-color: green;
+}
+.brown{
+	background-color: rgb(153, 51, 0);
+}
+.cyan{
+	background-color: rgb(0, 204, 255);
+}
+h1{
+	font-family: 'Roboto', sans-serif;
+	font-size: 60px;
+	margin-top: 18px;
+	letter-spacing: .3px;
+	text-align: center;
+	border-bottom: 1px solid gray;
+	height: 130px;
+}
