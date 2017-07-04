@@ -64,8 +64,11 @@ function workit() {
 	setTimeout("showedits()", 128500);
 }
 
-function playMusic(){
-   var audio = document.getElementById("audio");
-   audio.play();
-}
 
+
+var iframeElement   = document.querySelector('iframe');
+var widget1         = SC.Widget(iframeElement);
+
+function playMusic(){
+   widget1.play();
+}
