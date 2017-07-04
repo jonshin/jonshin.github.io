@@ -2,20 +2,29 @@ function showIt() {
 	document.getElementById("chorus").style.display = "block";
 } 
 function hideIt() {
-	document.getElementById("chorus").style.display = "none";
 	document.getElementById("vid").play();
+	document.getElementById("chorus").style.display = "none";
 } 
 function showvid() {
-	document.getElementById("vid").style.display = "block";
 	document.getElementById("vid").play()
+	document.getElementById("vid").style.display = "block";
 } 
 function hidevid() {
 	document.getElementById("vid").style.display = "none";
 } 
 
 function showedits() {
-	document.getElementById("edits").style.display = "block";
 	document.getElementById("edits").play()
+	document.getElementById("edits").style.display = "block";
+} 
+function showending() {
+	document.getElementById("edits").style.display = "none";
+	document.getElementById("ending").style.display = "block";
+} 
+function hideending() {
+	document.getElementById("ending").style.display = "none";
+	document.getElementById("slate").style.display = "block";
+	document.body.style.backgroundColor = "white";
 } 
 
 function workit() {
@@ -64,7 +73,9 @@ function workit() {
 	setTimeout("showvid()", 114400);
 	setTimeout("hidevid()", 117900);
 
-	setTimeout("showedits()", 128500);
+	setTimeout("showedits()", 130000);
+	setTimeout("showending()", 247000);
+	setTimeout("hideending()", 249000);
 }
 
 var iframeElement   = document.querySelector('iframe');
