@@ -72,7 +72,7 @@ function playMusic(){
 	widget1.bind(SC.Widget.Events.READY, function() {
 	      widget1.bind(SC.Widget.Events.PLAY_PROGRESS, function() {
 	        widget1.getPosition(function(currentPosition) {
-	          if (currentPosition < 10){
+	          if (currentPosition < 50 && currentPosition > 0){
 	      		workit();
 	          }
 	        });
