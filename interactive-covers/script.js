@@ -19,6 +19,9 @@ function showedits() {
 } 
 
 function workit() {
+	document.getElementById("edits").play()
+	document.getElementById("edits").pause()
+
 	document.getElementById("button").style.display = "none";
 
 	setTimeout("showIt()", 24500); // after 24.5 sec 24500	// 7 sec
