@@ -103,16 +103,16 @@ body{
 	-webkit-animation-delay: 0.5s;
 }
 .ending p:nth-child(4){
-	animation-delay: 1s;
-	-webkit-animation-delay: 1s;
+	animation-delay: 2s;
+	-webkit-animation-delay: 2s;
 }
 .ending p:nth-child(5){
-	animation-delay: 1.2s;
-	-webkit-animation-delay: 1.2s;
+	animation-delay: 2.2s;
+	-webkit-animation-delay: 2.2s;
 }
 .ending p:nth-child(6){
-	animation-delay: 1.4s;
-	-webkit-animation-delay: 1.4s;
+	animation-delay: 2.4s;
+	-webkit-animation-delay: 2.4s;
 }
 @keyframes FadeIn {
     0% {opacity:0;}

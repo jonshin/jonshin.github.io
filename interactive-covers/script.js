@@ -28,6 +28,7 @@ function hideending() {
 } 
 
 function workit() {
+	document.getElementById("vid").play();
 	document.getElementById("edits").play()
 	document.getElementById("edits").pause()
 
@@ -73,8 +74,8 @@ function workit() {
 	setTimeout("showvid()", 114400);
 	setTimeout("hidevid()", 117900);
 
-	setTimeout("showedits()", 130000);
-	setTimeout("showending()", 247000);
+	setTimeout("showedits()", 128600);
+	setTimeout("showending()", 244900);
 	setTimeout("hideending()", 249000);
 }
 
