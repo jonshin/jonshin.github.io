@@ -1,4 +1,4 @@
-var dir = "img/";
+var dir = "images/png/";
 var fileextension = ".png";
 $.ajax({
     //This will retrieve the contents of the folder if the folder is configured as 'browsable'
