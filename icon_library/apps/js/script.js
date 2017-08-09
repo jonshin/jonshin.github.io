@@ -1,13 +1,12 @@
-var dir = "images/png/";
-var fileextension = ".png";
+var folder = "images/png/";
+
 $.ajax({
-    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-    url: dir,
+    url : folder,
     success: function (data) {
-        //List all .png file names in the page
-        $(data).find("a:contains(" + fileextension + ")").each(function () {
-            var filename = this.href.replace(window.location.host, "").replace("http://", "");
-            $("body").append("<img src='" + dir + filename + "'>");
+        $(data).find("a").attr("href", function (i, val) {
+            if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+                $("body").append( "<img src='"+ folder + val +"'>" );
+            } 
         });
     }
 });
