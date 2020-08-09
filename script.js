@@ -27,11 +27,11 @@ tl.fromTo(".orange",  { yPercent: -100, x: 0}, {yPercent: 0}, )
 	.fromTo(".five", {yPercent: 100, y: 0}, {yPercent: 0}, 7.75)
 	.fromTo(".subway", {yPercent: -100, y: 0}, {yPercent: 0}, 7.75)
 
-	.fromTo(".beige", {yPercent: -100, y: 0}, {yPercent: 0}, 10)
-	.addLabel("snap5")
-	.fromTo(".signs2", {yPercent: 100, y: 0}, {yPercent: 0}, 10)
-	.fromTo(".six", {yPercent: 100, y: 0}, {yPercent: 0}, 10)
-	.fromTo(".mask2", {yPercent: -100, y: 0}, {yPercent: 0}, 10)
+	// .fromTo(".beige", {yPercent: -100, y: 0}, {yPercent: 0}, 10)
+	// .addLabel("snap5")
+	// .fromTo(".signs2", {yPercent: 100, y: 0}, {yPercent: 0}, 10)
+	// .fromTo(".six", {yPercent: 100, y: 0}, {yPercent: 0}, 10)
+	// .fromTo(".mask2", {yPercent: -100, y: 0}, {yPercent: 0}, 10)
   ;
 
 // pin the container and link the animation to the scrollbar (scrub: true). We could easily embed this in the gsap.timeline() to shorten things a bit, but this is to show that you can create the ScrollTrigger separately if you prefer. 
@@ -43,16 +43,16 @@ ScrollTrigger.create({
   scrub: true,
   pin: true,
   anticipatePin: 1,
-  snap: {
-    snapTo: "labels", // snap to the closest label in the timeline
-    duration: {min: 0.2, max: 1}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-    delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
-  }
+  // snap: {
+  //   snapTo: "labels", // snap to the closest label in the timeline
+  //   duration: {min: 0.2, max: 1}, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
+  //   delay: 0.2, // wait 0.2 seconds from the last scroll event before doing the snapping
+  // }
 });
 
-ScrollTrigger.create({
-  start: 1,
-  end: () => ScrollTrigger.maxScroll(window) - 1,
-  onLeaveBack: self => self.scroll(ScrollTrigger.maxScroll(window) - 2),
-  onLeave: self => self.scroll(2)
-}).scroll(2);
+// ScrollTrigger.create({
+//   start: 1,
+//   end: () => ScrollTrigger.maxScroll(window) - 1,
+//   onLeaveBack: self => self.scroll(ScrollTrigger.maxScroll(window) - 2),
+//   onLeave: self => self.scroll(2)
+// }).scroll(2);
