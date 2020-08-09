@@ -31,35 +31,11 @@ img{
   align-items: center;
   text-align: center;
 }
-.signs{
-  background: url("img/1_signs.jpg") no-repeat center center scroll;
-/*  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
-}
-.signs2{
-  background: url("img/1_signs.jpg") no-repeat center center scroll;
-}
-.windows{
-  background: url("img/2_windows.jpg") no-repeat center center scroll;
-}
-.slums{
-  background: url("img/3_slums.jpg") no-repeat center center scroll;
-}
-.crowd{
-  background: url("img/4_crowd.jpg") no-repeat center center scroll;
-}
-.market{
-  background: url("img/5_market.jpg") no-repeat center center scroll;
-}
-
 html, body {
   margin: 0;
   height: 100vh;
   -webkit-overflow-scrolling: touch;
   overflow-scrolling: touch;
-  font-family: "Signika Negative", sans-serif, Arial;
   background-color: black;
 }
 
@@ -86,11 +62,43 @@ body {
   position: relative;
   overflow: hidden;
 }
-
+@media only screen 
+  and (orientation: landscape) { 
+    .signs{
+      background: url("img/1_signs.jpg") no-repeat center center scroll;
+    }
+    .windows{
+      background: url("img/2_windows.jpg") no-repeat center center scroll;
+    }
+    .slums{
+      background: url("img/3_slums.jpg") no-repeat center center scroll;
+    }
+    .crowd{
+      background: url("img/4_crowd.jpg") no-repeat center center scroll;
+    }
+    .market{
+      background: url("img/5_market.jpg") no-repeat center center scroll;
+    }
+}
 @media only screen 
   and (orientation: portrait) { 
     img{
       height: auto;
       width: 60%;
+    }
+    .signs{
+      background: url("img/1_signs_portrait.jpg") no-repeat center center scroll;
+    }
+    .windows{
+      background: url("img/2_windows_portrait.jpg") no-repeat center center scroll;
+    }
+    .slums{
+      background: url("img/3_slums_portrait.jpg") no-repeat center center scroll;
+    }
+    .crowd{
+      background: url("img/4_crowd_portrait.jpg") no-repeat center center scroll;
+    }
+    .market{
+      background: url("img/5_market_portrait.jpg") no-repeat center center scroll;
     }
 }
