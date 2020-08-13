@@ -3,15 +3,15 @@ footer{
   display: flex;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   text-align: center;
   background-color: rgb(240,240,240);
 }
 p{
-  font-size: 12pt;
+  font-size: 20px;
   width: 80%;
   font-family: sans-serif;
-  line-height: 20pt;
+  line-height: 30px;
 }
 .cover{
   height: 100vh;
