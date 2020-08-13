@@ -22,6 +22,8 @@ tl.fromTo(".orange",  { yPercent: -100, x: 0}, {yPercent: 0}, )
 	.fromTo(".market", {yPercent: 100, y: 0}, {yPercent: 0}, 7.75)
 	.fromTo(".five", {yPercent: 100, y: 0}, {yPercent: 0}, 7.75)
 	.fromTo(".subway", {yPercent: -100, y: 0}, {yPercent: 0}, 7.75)
+
+	.fromTo(".footer", {yPercent: 100, y: 0}, {yPercent: 0}, 10)
   ;
 
 // pin the container and link the animation to the scrollbar (scrub: true). We could easily embed this in the gsap.timeline() to shorten things a bit, but this is to show that you can create the ScrollTrigger separately if you prefer. 
@@ -29,7 +31,7 @@ ScrollTrigger.create({
   animation: tl,
   trigger: "#container",
   start: "top top",
-  end: "+=15000", 
+  end: "+=17000", 
   scrub: true,
   pin: true,
   anticipatePin: 1,
