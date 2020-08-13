@@ -1,18 +1,3 @@
-.red {
-  background-color: #c82736;
-}
-.orange {
-  background-color: #e77614;
-}
-.purple {
-  background-color: #8d3dae;
-}
-.green {
-  background-color: #28a92b;
-}
-.grey {
-  background-color: grey;
-}
 .cover{
   width: 100%;
   height: 100vh;
@@ -21,7 +6,7 @@
   align-items: center;
   text-align: center;
 }
-img{
+.frame img{
   height: 80%;
 }
 .frame{
@@ -64,10 +49,14 @@ body {
 }
 @media only screen 
   and (orientation: landscape) { 
-    .signs{
-      background: url("img/1_signs.jpg") no-repeat center center scroll;
+    .image_full{
+      height: 100vh;
+      display: block;
     }
-    .windows{
+    .image_mobile{
+      display: none;
+    }
+/*    .windows{
       background: url("img/2_windows.jpg") no-repeat center center scroll;
     }
     .slums{
@@ -78,18 +67,22 @@ body {
     }
     .market{
       background: url("img/5_market.jpg") no-repeat center center scroll;
-    }
+    }*/
 }
 @media only screen 
   and (orientation: portrait) { 
-    img{
+    .frame img{
       height: auto;
       width: 60%;
     }
-    .signs{
-      background: url("img/1_signs_portrait.jpg") no-repeat center center scroll;
+    .image_full{
+      display: none;
     }
-    .windows{
+    .image_mobile{
+      width: 100vh;
+      display: block;
+    }
+/*    .windows{
       background: url("img/2_windows_portrait.jpg") no-repeat center center scroll;
     }
     .slums{
@@ -100,5 +93,5 @@ body {
     }
     .market{
       background: url("img/5_market_portrait.jpg") no-repeat center center scroll;
-    }
+    }*/
 }
