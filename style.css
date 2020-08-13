@@ -1,5 +1,4 @@
 .cover{
-  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -45,7 +44,6 @@ body {
   width: 100%;
   height: 100vh; 
   position: relative;
-  overflow: hidden;
 }
 @media only screen 
   and (orientation: landscape) { 
@@ -56,18 +54,6 @@ body {
     .image_mobile{
       display: none;
     }
-/*    .windows{
-      background: url("img/2_windows.jpg") no-repeat center center scroll;
-    }
-    .slums{
-      background: url("img/3_slums.jpg") no-repeat center center scroll;
-    }
-    .crowd{
-      background: url("img/4_crowd.jpg") no-repeat center center scroll;
-    }
-    .market{
-      background: url("img/5_market.jpg") no-repeat center center scroll;
-    }*/
 }
 @media only screen 
   and (orientation: portrait) { 
@@ -79,19 +65,7 @@ body {
       display: none;
     }
     .image_mobile{
-      height: 150%;
+      height: 150vh;
       display: block;
     }
-/*    .windows{
-      background: url("img/2_windows_portrait.jpg") no-repeat center center scroll;
-    }
-    .slums{
-      background: url("img/3_slums_portrait.jpg") no-repeat center center scroll;
-    }
-    .crowd{
-      background: url("img/4_crowd_portrait.jpg") no-repeat center center scroll;
-    }
-    .market{
-      background: url("img/5_market_portrait.jpg") no-repeat center center scroll;
-    }*/
 }
