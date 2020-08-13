@@ -32,7 +32,7 @@ html, body {
   text-align: center;
   position: relative;
   box-sizing: border-box;
-  position: absolute;
+  /*position: absolute;*/
   overflow: hidden;
 }
 
