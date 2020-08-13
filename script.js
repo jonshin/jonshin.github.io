@@ -34,3 +34,8 @@ ScrollTrigger.create({
   pin: true,
   anticipatePin: 1,
 });
+
+window.onresize = function() {
+    document.body.height = window.outerHeight;
+}
+window.onresize(); // called to initially set the height.
